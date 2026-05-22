@@ -11,7 +11,7 @@ body {
 
 .cross {
   position: fixed;
-  background: url("assets/rose.png") repeat;
+  background: url("rose.png") repeat;
   animation: float 6s infinite alternate ease-in-out;
   z-index: 1;
 }
@@ -50,10 +50,10 @@ body {
   justify-content: center;
 }
 
-.box1 { background-image: url("assets/kiss.jpeg"); }
-.box2 { background-image: url("assets/hold.jpeg"); }
-.box3 { background-image: url("assets/arms.jpeg"); }
-.box4 { background-image: url("assets/jaggy2.jpeg"); }
+.box1 { background-image: url("kiss.jpeg"); }
+.box2 { background-image: url("hold.jpeg"); }
+.box3 { background-image: url("arms.jpeg"); }
+.box4 { background-image: url("jaggy2.jpeg"); }
 
 
 .glass {
