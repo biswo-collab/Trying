@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Beating Heart</title>
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: black;
+    }
+
+    .frame {
+      position: relative;
+      padding: 40px;
+    }
+
+    .frame::before,
+    .frame::after {
+      content: "";
+      position: absolute;
+      inset: -25px;
+      border: 3px solid white;
+      animation: glow 4s infinite alternate;
+    }
+
+    .frame::after {
+      inset: -55px;
+      opacity: 0.5;
+    }
+
+    img {
+      width: 400px;
+      border-radius: 10px;
+      box-shadow: 0 0 35px crimson;
+      animation: zoom 6s infinite alternate;
+    }
+
+    @keyframes glow {
+      from { opacity: 0.2; }
+      to { opacity: 1; }
+    }
+
+    @keyframes zoom {
+      from { transform: scale(1); }
+      to { transform: scale(1.06); }
+    }
+  </style>
+</head>
+<body>
+
+<div class="frame">
+  <img src="assets/page2img.jpeg" alt="Memory">
+</div>
+
+<audio autoplay loop src="assets/music2.mp3"></audio>
+
+</body>
+</html>
